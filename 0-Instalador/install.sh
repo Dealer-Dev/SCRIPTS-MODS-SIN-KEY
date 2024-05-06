@@ -91,7 +91,7 @@ install_inicial() {
   os_system
   repo "${vercion}"
   msgi -bar2
-  echo -e " \e[5m\e[1;100m   =====>> ►►     MULTI SCRIPT     ◄◄ <<=====    \e[1;37m"
+  echo -e " \e[5m\e[1;100m   ===>> ►► SCRIPTS MOD by: @DealerServices235 ◄◄ <<===    \e[1;37m"
   msgi -bar2
   #-- VERIFICAR VERSION
   msgi -ama "   PREPARANDO INSTALACION | VERSION: $vesaoSCT"
@@ -183,7 +183,7 @@ install_paquetes() {
   /bin/cp /etc/skel/.bashrc ~/
   #------- BARRA DE ESPERA
   msgi -bar2
-  echo -e " \e[5m\e[1;100m   =====>> ►►     MULTI SCRIPT     ◄◄ <<=====    \e[1;37m"
+  echo -e " \e[5m\e[1;100m   ===>> ►► SCRIPTS MOD by: @DealerServices235 ◄◄ <<===    \e[1;37m"
   msgi -bar
   echo -e "   \e[1;41m    -- INSTALACION PAQUETES FALTANTES --    \e[49m"
   msgi -bar
@@ -200,7 +200,7 @@ install_paquetes() {
   echo iptables-persistent iptables-persistent/autosave_v4 boolean true | sudo debconf-set-selections
   echo iptables-persistent iptables-persistent/autosave_v6 boolean true | sudo debconf-set-selections
   msgi -bar2
-  read -t 30 -n 1 -rsp $'\e[1;97m           Preciona Enter Para continuar\n'
+  read -t 30 -n 1 -rsp $'\e[1;97m           Presiona Enter Para continuar\n'
 }
 
 #SELECTOR DE INSTALACION
@@ -584,9 +584,9 @@ install_latam() {
       clear && clear
       msgi -bar2
       echo -e "\e[1;32m————————————————————————————————————————————————————"
-      figlet -w 85 -f smslant "         SCRIPT
+      figlet -w 85 -f smslant "         MOD
          LATAM  " | lolcat
-      msgi -ama "          [ ----- \e[1;97m 🐲 By @Kalix1 🐲\e[1;33m ----- ]"
+      msgi -ama "          [ ----- \e[1;97m 🐰 Dealer Services 🐰\e[1;33m ----- ]"
       echo -e "\e[1;32m————————————————————————————————————————————————————"
       pv="$(echo es)"
       [[ ${#id} -gt 2 ]] && id="es" || id="$pv"
@@ -607,7 +607,7 @@ install_latam() {
       echo 'rebootnb login >/dev/null 2>&1' >>.bashrc
       echo 'echo -e "\e[1;31m————————————————————————————————————————————————————" ' >>.bashrc
       echo 'echo -e "\e[1;93m════════════════════════════════════════════════════" ' >>.bashrc
-      echo 'sudo figlet -w 85 -f smslant "         SCRIPT
+      echo 'sudo figlet -w 85 -f smslant "         MOD
          LATAM"   | lolcat' >>.bashrc
       echo 'echo -e "\e[1;93m════════════════════════════════════════════════════" ' >>.bashrc
       echo 'echo -e "\e[1;31m————————————————————————————————————————————————————" ' >>.bashrc
@@ -625,7 +625,7 @@ install_latam() {
       timeespera="1"
       times="10"
       if [ "$timeespera" = "1" ]; then
-        echo -e "\e[1;97m         ❗️ REGISTRANDO IP y KEY EN LA BASE ❗️            "
+        echo -e "\e[1;97m         ❗️ REGISTRANDO IP EN LA BASE ❗️            "
         msgi -bar2
         while [ $times -gt 0 ]; do
           echo -ne "                         -$times-\e[0K\r"
@@ -806,13 +806,13 @@ v22=$(cat /etc/version_instalacion)
 vesaoSCT="\e[1;31m [ \e[1;32m( $v22 )\e[1;97m\e[1;31m ]"
 msgi -ama "   PREPARANDO INSTALACION | VERSION: $vesaoSCT"
 msgi -bar2
-echo -ne "\e[1;93m [\e[1;32m1\e[1;93m]\e[1;31m >\e[1;97m VPS-MX FINAL OFICIAL..(8.5)  \e[1;31m 🎁 FREE \e[97m \n"
-echo -ne "\e[1;93m [\e[1;32m2\e[1;93m]\e[1;31m >\e[1;97m LACASITAMX............(9X)   \e[1;31m 🎁 FREE \e[97m \n"
-echo -ne "\e[1;93m [\e[1;32m3\e[1;93m]\e[1;31m >\e[1;97m ADMRufu                      \e[1;31m 🎁 FREE OLD vercion\e[97m \n"
-echo -ne "\e[1;93m [\e[1;32m4\e[1;93m]\e[1;31m >\e[1;97m ChumoGH...............(5.7u) \e[1;31m 🎁 FREE \e[97m \n"
-echo -ne "\e[1;93m [\e[1;32m5\e[1;93m]\e[1;31m >\e[1;97m LATAM.................(2.0)  \e[1;96m 💎 ACCESO VIP \e[97m \n"
+echo -ne "\e[1;93m [\e[1;32m1\e[1;93m]\e[1;31m >\e[1;97m VPS-MX FINAL OFICIAL..(8.5)  \e[1;31m 🐇 FREE \e[97m \n"
+echo -ne "\e[1;93m [\e[1;32m2\e[1;93m]\e[1;31m >\e[1;97m LACASITAMX............(9X)   \e[1;31m 🐇 FREE \e[97m \n"
+echo -ne "\e[1;93m [\e[1;32m3\e[1;93m]\e[1;31m >\e[1;97m ADMRufu                      \e[1;31m 🐇 FREE OLD Version 2022\e[97m \n"
+echo -ne "\e[1;93m [\e[1;32m4\e[1;93m]\e[1;31m >\e[1;97m ChumoGH...............(5.7u) \e[1;31m 🐇 FREE \e[97m \n"
+echo -ne "\e[1;93m [\e[1;32m5\e[1;93m]\e[1;31m >\e[1;97m LATAM.................(2.0)  \e[1;96m 🐰 ACCESO VIP \e[97m \n"
 msgi -bar2
-echo -ne "\e[1;93m [\e[1;32m ARCHIVOS Y LINKS TOTALMENTE ABIERTOS Y PUBLICOS \e[1;93m]\e[1;96m\n       https://github.com/NetVPS/Multi-Script\e[97m \n"
+echo -ne "\e[1;93m [\e[1;32m PROYECTO DE SCRIPTS FREE TEMPORALES \e[1;93m]\e[1;96m\n       A cargo de: Dealer Services \e[97m \n"
 msgi -bar2
 echo -ne "\e[1;97mDigite solo el numero segun su respuesta:\e[32m "
 read opcao
