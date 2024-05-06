@@ -91,7 +91,7 @@ install_inicial() {
   os_system
   repo "${vercion}"
   msgi -bar2
-  echo -e " \e[5m\e[1;100m   ===>> ►► SCRIPTS MOD by: @DealerServices235 ◄◄ <<===    \e[1;37m"
+  echo -e " \e[5m\e[1;100m   == SCRIPTS MOD by: @DealerServices235 ==    \e[1;37m"
   msgi -bar2
   #-- VERIFICAR VERSION
   msgi -ama "   PREPARANDO INSTALACION | VERSION: $vesaoSCT"
@@ -131,7 +131,7 @@ password required pam_permit.so' >/etc/pam.d/common-password && chmod +x /etc/pa
   msgi -bar2
   echo -e "\e[1;93m\a\a\a      SE PROCEDERA A INSTALAR LAS ACTULIZACIONES\n PERTINENTES DEL SISTEMA, ESTE PROCESO PUEDE TARDAR\n VARIOS MINUTOS Y PUEDE PEDIR ALGUNAS CONFIRMACIONES \e[0;37m"
   msgi -bar
-  read -t 120 -n 1 -rsp $'\e[1;97m           Preciona Enter Para continuar\n'
+  read -t 120 -n 1 -rsp $'\e[1;97m           Presiona Enter Para continuar\n'
   clear && clear
   apt update
   apt upgrade -y
@@ -171,7 +171,7 @@ dependencias() {
   #soft=$(cat /root/paknoinstall.log)
   for i in $soft; do
     paquete="$i"
-    echo -e "\e[1;97m        INSTALANDO PAQUETE \e[93m ------ \e[36m $i"
+    echo -e "\e[1;97m        INSTALANDO \e[93m ------ \e[36m $i"
     barra_intall "apt-get install $i -y"
   done
   rm -rf /root/paknoinstall.log >/dev/null 2>&1
@@ -183,9 +183,9 @@ install_paquetes() {
   /bin/cp /etc/skel/.bashrc ~/
   #------- BARRA DE ESPERA
   msgi -bar2
-  echo -e " \e[5m\e[1;100m   ===>> ►► SCRIPTS MOD by: @DealerServices235 ◄◄ <<===    \e[1;37m"
+  echo -e " \e[5m\e[1;100m   == SCRIPTS MOD by: @DealerServices235 ==    \e[1;37m"
   msgi -bar
-  echo -e "   \e[1;41m    -- INSTALACION PAQUETES FALTANTES --    \e[49m"
+  echo -e "   \e[1;41m    -- INSTALANDO PAQUETES FALTANTES --    \e[49m"
   msgi -bar
   dependencias
   sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf >/dev/null 2>&1
@@ -434,7 +434,7 @@ clear
   clear && clear
   msgi -bar2
   echo -e "\e[1;92m             >> INSTALACION COMPLETADA <<" && msgi -bar2
-  echo -e "      COMANDO PRINCIPAL PARA ENTRAR AL PANEL "
+  echo -e "       PARA ENTRAR AL PANEL ESCRIBE: "
   echo -e "                      \033[1;41m  menu  \033[0;37m" && msgi -bar2
 
 }
@@ -806,9 +806,9 @@ v22=$(cat /etc/version_instalacion)
 vesaoSCT="\e[1;31m [ \e[1;32m( $v22 )\e[1;97m\e[1;31m ]"
 msgi -ama "   PREPARANDO INSTALACION | VERSION: $vesaoSCT"
 msgi -bar2
-echo -ne "\e[1;93m [\e[1;32m1\e[1;93m]\e[1;31m >\e[1;97m VPS-MX FINAL OFICIAL..(8.5)  \e[1;31m 🐇 FREE \e[97m \n"
-echo -ne "\e[1;93m [\e[1;32m2\e[1;93m]\e[1;31m >\e[1;97m LACASITAMX............(9X)   \e[1;31m 🐇 FREE \e[97m \n"
-echo -ne "\e[1;93m [\e[1;32m3\e[1;93m]\e[1;31m >\e[1;97m ADMRufu                      \e[1;31m 🐇 FREE OLD Version 2022\e[97m \n"
+echo -ne "\e[1;93m [\e[1;32m1\e[1;93m]\e[1;31m >\e[1;97m VPS-MX FINAL OFICIAL..(8.5). \e[1;31m 🐇 FREE \e[97m \n"
+echo -ne "\e[1;93m [\e[1;32m2\e[1;93m]\e[1;31m >\e[1;97m LACASITAMX............(9X).  \e[1;31m 🐇 FREE \e[97m \n"
+echo -ne "\e[1;93m [\e[1;32m3\e[1;93m]\e[1;31m >\e[1;97m SCRIPT RUFU                  \e[1;31m 🐇 Version 2022\e[97m\n"
 echo -ne "\e[1;93m [\e[1;32m4\e[1;93m]\e[1;31m >\e[1;97m ChumoGH...............(5.7u) \e[1;31m 🐇 FREE \e[97m \n"
 echo -ne "\e[1;93m [\e[1;32m5\e[1;93m]\e[1;31m >\e[1;97m LATAM.................(2.0)  \e[1;96m 🐰 ACCESO VIP \e[97m \n"
 msgi -bar2
